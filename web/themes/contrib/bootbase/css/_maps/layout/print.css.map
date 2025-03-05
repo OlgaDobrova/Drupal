@@ -1,0 +1,1 @@
+{"version":3,"file":"../../layout/print.css","sources":["layout/print.scss"],"sourcesContent":["#manager-menu,\n#sys,\n.region-breadcrumb,\nfooter,\nheader {\n  display: none;\n}\n"],"names":[],"mappings":"AAAA,AAAA,aAAa;AACb,IAAI;AACJ,kBAAkB;AAClB,MAAM;AACN,MAAM,CAAC;EACL,OAAO,EAAE,IAAI,GACd"}

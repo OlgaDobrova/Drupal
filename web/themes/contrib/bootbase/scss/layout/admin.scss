@@ -1,0 +1,64 @@
+.kint {
+  footer {
+    min-height: 0;
+  }
+  dt.kint-parent > .kint-popup-trigger {
+    z-index: 10;
+    position: relative;
+  }
+}
+// Editor.
+span.file {
+  height: auto;
+}
+// Forms.
+.form-type-checkbox .description,
+.form-type-radio .description {
+  margin-left: 0;
+}
+.details-wrapper .form-control {
+  display: inline;
+  width: auto;
+}
+a.tabledrag-handle .handle {
+  height: 22px;
+  width: 22px;
+}
+td.checkbox,
+th.checkbox {
+  position: static;
+  margin: 0;
+  display: table-cell;
+}
+.form--inline {
+  .form-item select {
+    padding: 0.485rem 0.75rem;
+  }
+}
+// Fix admin-menu.
+@media (max-width: 991px) {
+  #toolbar-administration {
+    display: none !important;
+  }
+  body.toolbar-tray-open {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+// Admin Toolbar module fixes.
+.toolbar-tray-horizontal .toolbar-menu:not(:first-child) li.menu-item--expanded > a:focus {
+  background-image: none !important;
+}
+// End-page block for screan-readers.
+#drupal-live-announce {
+  height: 0;
+}
+// Contextual colorize.
+.contextual button {
+  .contextual-region.view & {
+    background-color: #fff7da;
+  }
+  .contextual-region.node & {
+    background-color: #f0fff4;
+  }
+}

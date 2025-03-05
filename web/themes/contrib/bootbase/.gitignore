@@ -1,0 +1,6 @@
+# Git ignore css map
+# inclide: css/*
+scss/_colors.scss
+bower_components
+node_modules
+package-lock.json

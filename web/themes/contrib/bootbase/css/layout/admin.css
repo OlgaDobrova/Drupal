@@ -1,0 +1,51 @@
+.kint footer {
+  min-height: 0; }
+
+.kint dt.kint-parent > .kint-popup-trigger {
+  z-index: 10;
+  position: relative; }
+
+span.file {
+  height: auto; }
+
+.form-type-checkbox .description,
+.form-type-radio .description {
+  margin-left: 0; }
+
+.details-wrapper .form-control {
+  display: inline;
+  width: auto; }
+
+a.tabledrag-handle .handle {
+  height: 22px;
+  width: 22px; }
+
+td.checkbox,
+th.checkbox {
+  position: static;
+  margin: 0;
+  display: table-cell; }
+
+.form--inline .form-item select {
+  padding: 0.485rem 0.75rem; }
+
+@media (max-width: 991px) {
+  #toolbar-administration {
+    display: none !important; }
+  body.toolbar-tray-open {
+    margin: 0 !important;
+    padding: 0 !important; } }
+
+.toolbar-tray-horizontal .toolbar-menu:not(:first-child) li.menu-item--expanded > a:focus {
+  background-image: none !important; }
+
+#drupal-live-announce {
+  height: 0; }
+
+.contextual-region.view .contextual button {
+  background-color: #fff7da; }
+
+.contextual-region.node .contextual button {
+  background-color: #f0fff4; }
+
+/*# sourceMappingURL=../_maps/layout/admin.css.map */

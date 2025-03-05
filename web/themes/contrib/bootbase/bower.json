@@ -1,0 +1,22 @@
+{
+  "name": "bootbase",
+  "description": "Starter theme",
+  "main": "gulpfile.js",
+  "authors": [
+    "Synapse-studio.ru"
+  ],
+  "license": "ISC",
+  "homepage": "https://www.synapse-studio.ru/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "flickity": "^2.1.1",
+    "owl.carousel": "^2.3.4"
+  }
+}

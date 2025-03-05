@@ -1,0 +1,84 @@
+bootstrap:
+  version: VERSION
+  css:
+    layout:
+      bootstrap5/css/bootstrap.css: {}
+  js:
+    bootstrap5/js/bootstrap.bundle.min.js: {}
+  dependencies:
+    - core/jquery
+
+faicons:
+  version: 5.8.1
+  css:
+    layout:
+      fontawesome/css/all.min.css: {}
+
+theme:
+  version: VERSION
+  js:
+    js/forms.js: {}
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+
+admin:
+  version: VERSION
+  css:
+    theme:
+      css/layout/admin.css: {}
+  js:
+    js/admin.js: {}
+  dependencies:
+    - core/jquery
+    - core/js-cookie
+    - core/jquery.ui.core
+    - core/jquery.ui.draggable
+    - core/drupalSettings
+
+print:
+  version: VERSION
+  css:
+    layout:
+      css/layout/print.css: { media: print }
+  dependencies:
+    - core/jquery
+
+flickity:
+  version: VERSION
+  css:
+    theme:
+      js/flickity/flickity.min.css: {}
+  js:
+    js/flickity/flickity.pkgd.min.js: {}
+  dependencies:
+    - core/jquery
+
+inputmask:
+  version: VERSION
+  js:
+    js/inputmask/jquery.inputmask.min.js: {}
+  dependencies:
+    - core/jquery
+
+vue:
+  js:
+    js/vue/app.js: {}
+  dependencies:
+    - bootbase/vue-dev
+
+vue-dev:
+  js:
+    js/vue/vue-dev.js: { preprocess: false }
+    js/vue/axios.min.js: { minified: true }
+    js/vue/vuex.min.js: { minified: true }
+
+vue-prod:
+  js:
+    js/vue/vue-prod.js: { minified: true }
+    js/vue/axios.min.js: { minified: true }
+    js/vue/vuex.min.js: { minified: true }
+
+vue-cookies:
+  js:
+    js/vue/vue-cookies.js: {}

@@ -1,0 +1,35 @@
+name: BootBase
+description: Bootstrap base theme for Drupal 10+.
+type: theme
+base theme: classy
+core_version_requirement: ^9 || ^10 || ^11
+libraries:
+  - bootbase/bootstrap
+  - bootbase/faicons
+  - bootbase/theme
+  - bootbase/print
+libraries-override:
+  classy/base:
+    css:
+      component:
+        css/components/pager.css: false
+regions:
+  header: Header
+  menu_small: Menu Small
+  menu_main: Menu Main
+  title: Title
+  tabs: Tabs
+  breadcrumb: Breadcrumb
+  messages: Messages
+  featured: Featured
+  sidebar: Sidebar
+  order: Order
+  slider: Slider
+  content: Content
+  footer: Footer
+  bottom: Bottom
+
+# Information added by Drupal.org packaging script on 2024-09-18
+version: '8.x-1.40'
+project: 'bootbase'
+datestamp: 1726666659

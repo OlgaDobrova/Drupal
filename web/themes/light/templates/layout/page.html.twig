@@ -1,0 +1,15 @@
+<div class="page">
+  <div id="sys">
+    <div class="container">
+      {{ page.tabs }}
+      {{ page.messages }}
+    </div>
+  </div>
+  {% include directory ~ '/templates/layout/header.html.twig' %}
+
+  {{ page.content }}
+
+  {% include directory ~ '/templates/layout/footer.html.twig' %}
+
+</div>
+{{ page.bottom }}

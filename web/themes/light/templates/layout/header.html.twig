@@ -1,0 +1,18 @@
+
+{% set logo = '/' ~ directory ~ '/images/logo.svg' %}
+
+<header>
+  <div class="container">
+    <div class="header">
+      <div class="left">
+        <a href="/">
+          <img src="{{logo}}" alt="logo">
+        </a>
+        {{ page.header.light_main_menu }}
+      </div>
+      <div class="right">
+        {{ page.header.light_main_menu_right }}
+      </div>
+    </div>
+  </div>
+</header>

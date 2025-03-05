@@ -1,0 +1,22 @@
+{%
+  set classes = [
+    'block',
+    'service-block',
+    'service-block--small',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="container">
+    {% if label %}
+  {{ title_prefix }}
+      <h2>{{ label }}</h2>  
+    {{ title_suffix }}
+    {% endif %}
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+</div>
