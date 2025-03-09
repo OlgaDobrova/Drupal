@@ -7,43 +7,20 @@
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
-{% set slide1 = '/' ~ directory ~ '/images/slide1.png' %}
-{% set slide2 = '/' ~ directory ~ '/images/slide2.png' %}
-{% set slide3 = '/' ~ directory ~ '/images/slide3.png' %}
 
  {{ attach_library('bootbase/flickity') }}
 
 {% block paragraph %}
 	<div {{ attributes.addClass(classes) }} id="paragraphs-sliders-{{ paragraph.id() }}">
-		{# {% block content %}
-					<div class="container">
-						<div class="service-block-image">
-							{{ content }}
-						</div>
+		 {% block content %}
+				<div class="container">
+					<h2>Скриншоты</h2>	
+					<div class="service-block-image">
+						{{ content }}
 					</div>
+				</div>
 		 {% endblock %}
-		#}
 
-		<div class="container">
-			<h2>Скриншоты</h2>	
-			<div class="items">
-				<div class="item">
-					<img src="{{ slide1 }}" alt="slide">
-				</div>
-				<div class="item">
-					<img src="{{ slide2 }}" alt="slide">
-				</div>
-				<div class="item">
-					<img src="{{ slide3 }}" alt="slide">
-				</div>
-				<div class="item">
-					<img src="{{ slide2 }}" alt="slide">
-				</div>
-				<div class="item">
-					<img src="{{ slide3 }}" alt="slide">
-				</div>
-			</div>
-		</div>
 	</div>
 {% endblock paragraph %}
 

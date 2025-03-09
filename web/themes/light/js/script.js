@@ -18,7 +18,11 @@
   });
 
   function projectSlider() {
-    var slider = $(".paragraph--type--sliders .items");
+    // var slider = $(".paragraph--type--sliders .items");
+    var slider = $(
+      ".paragraph--type--sliders .service-block-image .field--name-field-images"
+    );
+
     if (slider.length) {
       slider.flickity({
         cellAlign: "left",
