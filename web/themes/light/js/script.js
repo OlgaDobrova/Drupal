@@ -33,6 +33,15 @@
         imagesLoaded: true,
         draggable: false,
         pageDots: false,
+        draggable: ">1",
+        // responsive: [
+        //   {
+        //     breakpoint: 768,
+        //     settings: {
+        //       cellAlign: "center",
+        //     },
+        //   },
+        // ],
       });
       slider.on("dragStart.flickity", function (event, pointer) {
         $(this).addClass("is-dragging");
